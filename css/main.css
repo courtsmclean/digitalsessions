@@ -7,7 +7,7 @@ button,
 input,
 select,
 textarea {
-    color: #222;
+    color: #696969;
 }
 
 body {
@@ -34,9 +34,21 @@ hr {
     padding: 0;
 }
 
+
+/* #Images
+============ */
+
 img {
     vertical-align: middle;
 }
+img.scale-with-grid {
+        border : 0;
+        max-width: 100%;
+        height: auto; }
+
+img.floatleft { float: left; margin: 0 10px 0 0; }
+img.floatright { float: right; margin: 0 0 0 10px; }
+
 
 fieldset {
     border: 0;
@@ -56,41 +68,159 @@ textarea {
 }
 
 
+/* ==========================================================================
+   Open Sans @font-face kit
+   ========================================================================== */
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Open Sans Light'), local('Open-Sans-Light'),
+  url('OpenSans-Light.woff') format('woff'),
+  url('OpenSans-Light.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Open Sans Italic'), local('Open-Sans-Italic'),
+  url('OpenSans-Italic.woff') format('woff'),
+  url('OpenSans-Italic.ttf') format('truetype');
+}
+ 
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans Bold'), local('Open-Sans-Bold'),
+  url('OpenSans-Bold.woff') format('woff'),
+  url('OpenSans-Bold.ttf') format('truetype');
+}
+ 
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans Regular'), local('Open-Sans-Regular'),
+  url('OpenSans-Regular.woff') format('woff'),
+  url('OpenSans-Regular.ttf') format('truetype');
+}
+
 /* ===== Initializr Styles ==================================================
    Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
    ========================================================================== */
 
 body {
-    font: 16px/26px Helvetica, Helvetica Neue, Arial;
+    background: #f2f2f2;
+    color: #696969;
+    font-family:'Open Sans', Helvetica, Helvetica Neue, Arial;
+    font-size: 100%/1.6; 
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+}
+
+.container {
+    margin: 0px auto;
+    max-width: 1000px;
+    overflow: auto;
+    padding: 0px;
+    text-align: left;
+    width: 88%; /* 960px / 1024px */
+}
+
+.content {
+    width: 100%;
+    padding: 80px 0 0 0;
 }
 
 .wrapper {
-    width: 90%;
-    margin: 0 5%;
+    width: 100%;
+    margin: 0;
 }
 
-/* ===================
-    ALL: Orange Theme
-   =================== */
 
-.header-container {
-    border-bottom: 20px solid #e44d26;
+
+/* #Horizontal Rule - hr =============== */
+hr { 
+    border: solid #ddd; 
+    border-width: 1px 0 0; 
+    clear: both; 
+    margin: 30px 0 30px; 
+    height: 0; 
+    }
+
+
+/* #Typography =============== */
+h1, h2, h3, h4, h5, h6 {}
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { 
+    font-weight: inherit; 
+    text-decoration: none; 
 }
 
-.footer-container,
-.main aside {
-    border-top: 20px solid #e44d26;
+h1 { 
+    font-size: 2.4em; /* 46px / 16px */ 
+    font-weight: 300;
+    line-height: 1.3em; /* 50px / 16px */ 
+    margin-bottom: 22px;
+}
+h2 { 
+    font-size: 1.6em; 
+    font-weight: 700;
+    line-height: 1.5em; 
+    margin-bottom: 10px; 
+}
+h3 { 
+    font-size: 1.2em; 
+    font-weight: 700;
+    line-height: 1.5em; 
+    text-transform: uppercase;
+}
+p {
+    padding: 5px 10%;
+
 }
 
-.header-container,
-.footer-container,
-.main aside {
-    background: #f16529;
+/* #Colours =============== */
+.blue {color: #1d70b7;}
+.pink {color: #e5007e;}
+.orange {color: #f9a946;}
+
+
+
+
+/* ============
+    ALL: Header
+   ============ */
+
+header.main {
+    background: #ffffff;
+    border-bottom: 1px solid #cccccc;
+    margin: 0px;
+    padding: 0px;
+    position: fixed;
+    z-index: 10;
 }
 
 .title {
     color: white;
 }
+
+/* #Logo =============== */
+a.logo img {
+    padding: 0;
+    margin:  6px 0px;
+}
+
+#top {
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+
+}
+
 
 /* ==============
     MOBILE: Menu
@@ -101,22 +231,28 @@ nav ul {
     padding: 0;
 }
 
-nav a {
+nav a,nav a:visited {
+    border-left: 1px solid #cccccc;
     display: block;
-    margin-bottom: 10px;
-    padding: 15px 0;
+    margin:0px;
+    padding: 16px 3%;
 
     text-align: center;
     text-decoration: none;
-    font-weight: bold;
-
-    color: white;
-    background: #e44d26;
+    text-transform: uppercase;
+    color: #c9c9c9;
 }
-
-nav a:hover,
-nav a:visited {
-    color: white;
+nav a:link {
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+nav li:last-child a {
+    border-right: 1px solid #cccccc;
+}
+nav a:hover {
+    color: #1d70b7;
 }
 
 nav a:hover {
@@ -142,7 +278,7 @@ nav a:hover {
 
 .footer-container footer {
     color: white;
-    padding: 20px 0;
+    padding: 0 0 20px 20px;
 }
 
 /* ===============
@@ -157,15 +293,103 @@ nav a:hover {
    Author's custom styles
    ========================================================================== */
 
+.white-panel {
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    margin-bottom: 40px;
+    padding: 50px 10%;
+    overflow: auto;
+    text-align: center;
+    -webkit-border-radius: 10px;
+       -moz-border-radius: 10px;
+            border-radius: 10px;
+}
+
+.minus-padding {
+    padding: 15px 10% 0px;
+}
+.centre .panel:first-child {
+    margin: 0px 0 0 3%;
+}
+
+.panel p {
+    margin-bottom: 60px;
+}
+.panel p a, .panel p a:visited{
+    border-bottom: 1px dotted #e5007e;
+    color: #696969;
+    font-size: 0.8em;
+    text-decoration: none;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    }
+
+.panel p a:hover {
+    color:#e5007e;
+}
+
+.benefits {
+    background-color: #1d70b7;
+    margin: 20px 0 20px 0;
+    padding: 10% 15%;
+    -webkit-border-radius: 4px;
+       -moz-border-radius: 4px;
+            border-radius: 4px;
+}
+.speakers {
+    background-color: #cccccc;
+    margin: 20px 0 20px 0;
+    padding: 10% 15%;
+    -webkit-border-radius: 4px;
+       -moz-border-radius: 4px;
+            border-radius: 4px;
+}
+.schedule {
+    background-color: #f9a946;
+    margin: 0;
+    padding: 20% 10%;
+    -webkit-border-radius: 4px 0 0 4px;
+       -moz-border-radius: 4px 0 0 4px;
+            border-radius: 4px 0 0 4px;
+}
+
+#benefits,#speakers,#schedule {
+padding-top: 60px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+
+}
 
 
+.speakers-container {
+    float: left;
+    width: 49.16%;
+}
+.speakers-container:last-child {
+    margin-left: 1.6%;
+}
+.speakers-container .white-panel {
+    text-align: left;
+    padding: 0;
+}
+.speakers-container img{
+    float: left;
+}
+.speakers-container p{
+    padding-left: 0;
+    padding-right: 0;
+}
 
+.text {
+    float: left;
+    padding: 3.4%;
+    width: 60%;
 
-
-
-
-
-
+}
 
 
 
@@ -184,8 +408,7 @@ nav a:hover {
     nav a {
         float: left;
         width: 27%;
-        margin: 0 1.7%;
-        padding: 25px 2%;
+        margin: 0;
         margin-bottom: 0;
     }
 
@@ -216,11 +439,11 @@ nav a:hover {
     WIDE: CSS3 Effects
    ==================== */
 
-    .header-container,
+    header,
     .main aside {
-        -webkit-box-shadow: 0 5px 10px #aaa;
-           -moz-box-shadow: 0 5px 10px #aaa;
-                box-shadow: 0 5px 10px #aaa;
+        -webkit-box-shadow: 0 1px 10px #696969;
+           -moz-box-shadow: 0 1px 10px #696969;
+                box-shadow: 0 1px 10px #696969;
     }
 
 /* ============
@@ -233,7 +456,7 @@ nav a:hover {
 
     nav {
         float: right;
-        width: 38%;
+        width: 58%;
     }
 
 /* ============

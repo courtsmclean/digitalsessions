@@ -242,6 +242,7 @@ nav a,nav a:visited {
     text-transform: uppercase;
     color: #c9c9c9;
 }
+}
 nav a:link {
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
@@ -330,29 +331,26 @@ nav a:hover {
     color:#e5007e;
 }
 
-.benefits {
-    background-color: #1d70b7;
+.benefits, .speakers, .schedule {
     margin: 20px 0 20px 0;
     padding: 10% 15%;
+   -moz-border-radius: 4px;
     -webkit-border-radius: 4px;
-       -moz-border-radius: 4px;
-            border-radius: 4px;
+        border-radius: 4px;
+}
+.benefits {
+    background-color: #1d70b7;
 }
 .speakers {
     background-color: #cccccc;
-    margin: 20px 0 20px 0;
-    padding: 10% 15%;
-    -webkit-border-radius: 4px;
-       -moz-border-radius: 4px;
-            border-radius: 4px;
 }
 .schedule {
     background-color: #f9a946;
     margin: 0;
-    padding: 20% 10%;
+    padding: 15% 5%;
+   -moz-border-radius: 4px 0 0 4px;
     -webkit-border-radius: 4px 0 0 4px;
-       -moz-border-radius: 4px 0 0 4px;
-            border-radius: 4px 0 0 4px;
+    border-radius: 4px 0 0 4px;
 }
 
 #benefits,#speakers,#schedule {
@@ -361,13 +359,13 @@ padding-top: 60px;
     -moz-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
-
 }
-
 
 .speakers-container {
     float: left;
-    width: 49.16%;
+}
+.speakers-container .white-panel {
+    position: relative;
 }
 .speakers-container:last-child {
     margin-left: 1.6%;
@@ -383,15 +381,20 @@ padding-top: 60px;
     padding-left: 0;
     padding-right: 0;
 }
-
 .text {
     float: left;
     padding: 3.4%;
     width: 60%;
-
 }
-
-
+.bottom {
+    position: absolute;
+    bottom: 10px;
+    left: 32.6%;
+}
+p span{
+    font-weight: 700;
+    text-transform: uppercase;
+}
 
 
 

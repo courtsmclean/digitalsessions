@@ -61,7 +61,6 @@
 		header {
 			width: 100%; /* 960px / 1024px */
 			/* following code clears floated child elements */
-			overflow: auto;
 		}
 
 		section {

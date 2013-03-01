@@ -509,45 +509,51 @@ p span{
 
 header.main {
 
-                position: absolute;
-
+/*                position: absolute;
+*/
         }
 
 #menu-icon {
 
-                display:inline-block;
-                float: right;
+        display:inline-block;
+        float: right;
 
-        }
+}
 
-        nav ul, nav:active ul { 
-                display: none;
-                position: absolute;
-                padding: 20px;
-                background: #fff;
-                border: 5px solid #444;
-                right: 20px;
-                top: 20px;
-                width: 50%;
-                border-radius: 4px 0 4px 4px;
-                z-index: 100;
+nav ul, nav:active ul { 
+        display: none;
+        position: absolute;
+        padding: 4px 15px;
+        background: #fff;
+        border: 2px solid #444;
+        right: 20px;
+        top: 20px;
+        width: 20%;
+        border-radius: 4px 0 4px 4px;
+        z-index: 100;
 
-        }
+}
 
-        nav li {
+nav ul li, nav li a {
+    display: block;
+        text-align: center;
+        width: 100%;
+        padding: 4px 0;
+        margin: 0;
+}
+nav a,nav a:visited {    border: none;
+        text-align: center;
+}
+nav li:last-child a {
+    border-right: none;
+}
 
-                text-align: center;
-                width: 100%;
-                padding: 10px 0;
-                margin: 0;
 
-        }
+nav:hover ul {
 
-        nav:hover ul {
+        display: block;
 
-                display: block;
-
-        }
+}
 
 
 

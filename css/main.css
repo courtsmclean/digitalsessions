@@ -324,11 +324,11 @@ a:hover#menu-icon {
 .minus-padding {
     padding: 15px 10% 0px;
 }
-.centre .panel:first-child {
-    margin: 0px 0 0 3%;
+.panel {
+    overflow: auto;
+    padding-bottom: 8px;
 }
-
-.panel p {
+}.panel p {
     margin-bottom: 60px;
 }
 .panel p a, .panel p a:visited{
@@ -379,16 +379,25 @@ padding-top: 60px;
 .speakers-container {
     float: left;
 }
-.speakers-container .white-panel {
-    position: relative;
-}
-.speakers-container:last-child {
+/*.speakers-container:last-child {
     margin-left: 1.6%;
 }
-.speakers-container .white-panel {
+*/.speakers-container .white-panel {
     text-align: left;
     padding: 0;
+    position: relative;
 }
+.centre .panel {
+    overflow:auto;
+    height: 240px;
+}
+.centre p{ 
+    padding: 5px 0;
+}
+.centre .col:nth-child(1n+2) {
+    margin-left: 0;
+}
+
 .speakers-container img{
     float: left;
 }
@@ -410,7 +419,13 @@ p span{
     font-weight: 700;
     text-transform: uppercase;
 }
-
+.benefits-container .col:nth-child(1n+3) {
+    margin-left: 0;
+}
+#schedule-container {
+    overflow: auto;
+    width: 100%;
+}
 
 
 /* ==========================================================================
@@ -503,16 +518,44 @@ p span{
     }
 }
 
+@media only screen and (max-width : 990px) {
+
+    .four {
+        width: 49.16%; 
+    }
+    .schedule {
+        display: none;
+    }
+    .text {width: 90%;}
+
+    .centre .col:nth-child(odd) {
+        margin-left: 0;
+    }
+    .six {
+        width: 99.16%; 
+    }
+    #schedule-container .col{
+        margin-right: 0;
+        margin-left: 0;
+    }
+    .white-panel {
+        margin-bottom: 10px;
+    }
+
+}
+
+
 
 /*MEDIA QUERY*/
 @media only screen and (max-width : 768px) {
 
 header.main {
-
-/*                position: absolute;
-*/
+    /*position: absolute;*/
         }
 
+p {
+    padding: 3% 0;
+}
 #menu-icon {
 
         display:inline-block;
@@ -548,10 +591,24 @@ nav li:last-child a {
     border-right: none;
 }
 
-
 nav:hover ul {
 
         display: block;
+
+}
+
+.schedule {display: none;}
+
+.bottom {
+    display: block;
+    bottom:0;
+    margin:0 0 10px 3.4%;
+    position: static;
+}
+.four {
+    width: 99.16%; 
+}
+
 
 }
 

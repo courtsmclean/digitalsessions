@@ -361,6 +361,7 @@ a:hover#menu-icon {
 }
 .schedule {
     background-color: #f9a946;
+    float: left;
     margin: 0;
     padding: 15% 5%;
    -moz-border-radius: 4px 0 0 4px;
@@ -398,9 +399,6 @@ padding-top: 60px;
     margin-left: 0;
 }
 
-.speakers-container img{
-    float: left;
-}
 .speakers-container p{
     padding-left: 0;
     padding-right: 0;
@@ -426,7 +424,13 @@ p span{
     overflow: auto;
     width: 100%;
 }
-
+.schedule-row {
+    min-height: 280px;
+    overflow: auto;
+}
+.schedule-row .white-panel{
+    margin-bottom: 0;
+}
 
 /* ==========================================================================
    Media Queries
@@ -515,6 +519,18 @@ p span{
     .wrapper {
         width: 1026px; /* 1140px - 10% for margins */
         margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width : 1080px) {
+    .schedule {
+        float: none;
+        padding: 2% 0;
+        margin:0 auto;
+        text-align: center;
+    }
+    .text{
+        width: 90%;
     }
 }
 

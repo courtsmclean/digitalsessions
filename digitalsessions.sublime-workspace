@@ -3,18 +3,115 @@
 	{
 		"selected_items":
 		[
+			[
+				"margin",
+				"margin-bottom"
+			],
+			[
+				"mar",
+				"margin-bottom"
+			],
+			[
+				"whi",
+				"white-panel"
+			],
+			[
+				"o",
+				"overflow"
+			],
+			[
+				"ma",
+				"max-height"
+			],
+			[
+				"pad",
+				"padding"
+			],
+			[
+				"speakers",
+				"speakers-container"
+			],
+			[
+				"text",
+				"text"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"bo",
+				"border"
+			],
+			[
+				"bac",
+				"background-repeat"
+			],
+			[
+				"tex",
+				"text-transform"
+			],
+			[
+				"font",
+				"font-weight"
+			],
+			[
+				"te",
+				"text-align"
+			],
+			[
+				"t",
+				"text-align"
+			],
+			[
+				"fi",
+				"first-child"
+			],
+			[
+				"marg",
+				"margin-top"
+			],
+			[
+				"bord",
+				"border"
+			],
+			[
+				"font-f",
+				"font-family"
+			],
+			[
+				"co",
+				"color"
+			],
+			[
+				"backg",
+				"background-color"
+			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"contents": "",
-			"file": "/Users/courtneymclean/Desktop/initializr/index.html",
-			"file_size": -1,
-			"file_write_time": -1,
+			"file": "css/main.css",
 			"settings":
 			{
-				"buffer_size": 0,
+				"buffer_size": 13225,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 21167,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "css/columns.css",
+			"settings":
+			{
+				"buffer_size": 3223,
 				"line_ending": "Unix"
 			}
 		}
@@ -67,6 +164,9 @@
 	},
 	"file_history":
 	[
+		"/Users/courtneymclean/Downloads/Email-Blueprints-master/templates/transactional_basic.html",
+		"/Users/courtneymclean/Desktop/Hogarth/_Digital Sessions/digitalsessions/css/columns.css",
+		"/Users/courtneymclean/Desktop/initializr/index.html",
 		"/Users/courtneymclean/Desktop/initializr/initializr.sublime-project",
 		"/Users/courtneymclean/Desktop/Site/index.html",
 		"/Users/courtneymclean/Desktop/Site/style.css",
@@ -78,7 +178,7 @@
 	],
 	"find":
 	{
-		"height": 0.0
+		"height": 35.0
 	},
 	"find_in_files":
 	{
@@ -92,6 +192,24 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"schedu",
+			"schedule-container",
+			"nth",
+			"centre",
+			".speaker",
+			"blue",
+			"text",
+			"Excel",
+			"half",
+			"bene",
+			"panel",
+			"h2",
+			"bene",
+			"blue",
+			"h1",
+			"max-widmaxmth: 480px",
+			"max-width: 480px",
+			"nav"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -109,23 +227,51 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "/Users/courtneymclean/Desktop/initializr/index.html",
+					"file": "css/main.css",
 					"settings":
 					{
-						"buffer_size": 0,
+						"buffer_size": 13225,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								7818,
+								7818
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2439.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "index.html",
+					"settings":
+					{
+						"buffer_size": 21167,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								11233,
+								11233
 							]
 						],
 						"settings":
@@ -133,6 +279,33 @@
 							"syntax": "Packages/HTML/HTML.tmLanguage",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2634.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "css/columns.css",
+					"settings":
+					{
+						"buffer_size": 3223,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3056,
+								3083
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,

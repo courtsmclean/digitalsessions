@@ -91,30 +91,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "css/main.css",
-			"settings":
-			{
-				"buffer_size": 13225,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "index.html",
-			"settings":
-			{
-				"buffer_size": 21167,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "css/columns.css",
-			"settings":
-			{
-				"buffer_size": 3223,
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -164,8 +140,10 @@
 	},
 	"file_history":
 	[
-		"/Users/courtneymclean/Downloads/Email-Blueprints-master/templates/transactional_basic.html",
 		"/Users/courtneymclean/Desktop/Hogarth/_Digital Sessions/digitalsessions/css/columns.css",
+		"/Users/courtneymclean/Desktop/Hogarth/_Digital Sessions/digitalsessions/index.html",
+		"/Users/courtneymclean/Desktop/Hogarth/_Digital Sessions/digitalsessions/css/main.css",
+		"/Users/courtneymclean/Downloads/Email-Blueprints-master/templates/transactional_basic.html",
 		"/Users/courtneymclean/Desktop/initializr/index.html",
 		"/Users/courtneymclean/Desktop/initializr/initializr.sublime-project",
 		"/Users/courtneymclean/Desktop/Site/index.html",
@@ -227,92 +205,8 @@
 	"groups":
 	[
 		{
-			"selected": 1,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "css/main.css",
-					"settings":
-					{
-						"buffer_size": 13225,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								7818,
-								7818
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/CSS/CSS.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 2439.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "index.html",
-					"settings":
-					{
-						"buffer_size": 21167,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								11233,
-								11233
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 2634.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "css/columns.css",
-					"settings":
-					{
-						"buffer_size": 3223,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								3056,
-								3083
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/CSS/CSS.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				}
 			]
 		}
 	],
@@ -362,11 +256,11 @@
 	},
 	"select_project":
 	{
-		"height": 0.0,
+		"height": 500.0,
 		"selected_items":
 		[
 		],
-		"width": 0.0
+		"width": 380.0
 	},
 	"show_minimap": true,
 	"show_open_files": true,
